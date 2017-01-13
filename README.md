@@ -5,6 +5,7 @@
 
 1. git clone alexandria
 1. Create a fresh gemset and `bundle install`
+1. `brew install phantomjs`
 1. install and start postgres
   * `brew install postgresql`
   * `initdb /usr/local/pgsql/data`
@@ -34,5 +35,8 @@
   * `rake db:migrate RAILS_ENV=test`
 1. `cp config/secrets.yml.template config/secrets.yml`
 1. `bundle exec rake ci` (will probably download solr & fedora) - this will error out every other time…
-1. bundle exec rails s
+1. Make sure solr and fcrepo are running
+  * `./bin/wrap`
+  * visit `http://127.0.0.1:8985/solr/`
+1. `bundle exec rails s`
 1. connect to localhost:3000 in your browser
