@@ -36,8 +36,8 @@
 1. `cp config/secrets.yml.template config/secrets.yml`
 1. `bundle exec rake ci` (will probably download solr & fedora) - this will error out every other time…
 1. Make sure solr and fcrepo are running
-  * `./bin/wrap`
-  * visit `http://127.0.0.1:8985/solr/`
+  * `solr_wrapper --config config/solr_wrapper_development.yml`
+  * `fcrepo_wrapper --config config/fcrepo_wrapper_development.yml`
 1. `bundle exec rails s`
 1. connect to localhost:3000 in your browser
 
