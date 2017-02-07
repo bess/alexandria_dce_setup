@@ -40,3 +40,5 @@
   * visit `http://127.0.0.1:8985/solr/`
 1. `bundle exec rails s`
 1. connect to localhost:3000 in your browser
+### Import data
+1. On the rails console, import admin policy objects (see https://github.library.ucsb.edu/ADRL/alexandria/wiki/Cleaning-your-dev-environment for more info): `AdminPolicy.ensure_admin_policy_exists`
